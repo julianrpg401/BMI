@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Calculadora IMC</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 class="titulo">CALCULADORA DE IMC (INDICE DE MASA CORPORAL)</h1>
+    <form action="" class="formulario">
+
+        <!-- Seccion genero -->
+        <section class="genero">
+            <div class="sexo masculino">
+                <img src="img/btn-man.png" alt="Masculino" class="hombre">
+                <div class="leyendas">
+                    <label for="hombre">Masculino</label>
+                    <input type="radio" name="opciones" value="man" class="radio" id="hombre" onclick="GetInputRadio()">
+                </div>
+            </div>
+            <div class="sexo femenino">
+                <img src="img/btn-woman.png" alt="Masculino" class="hombre">
+                <div class="leyendas">
+                    <label for="mujer">Femenino</label>
+                    <input type="radio" name="opciones" value="woman" class="radio" id="mujer" onclick="GetInputRadio()">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion parametros -->
+        <section class="peso_estatura">
+            <div class="peso">
+                <div class="aling_items">
+                    <label for="barra_peso" class="parametros">Peso (Kg)</label>
+                    <p contenteditable="true" class="contador" id="peso">30</p>
+                </div>
+                <div class="barra">
+                    <input type="range" name="" value="30" step="1" min="30" max="150" class="rango" id="barra_peso">
+                </div>
+            </div>
+            <div class="estatura">
+                <div class="aling_items">
+                    <label for="barra_estatura" class="parametros">Estatura (cm)</label>
+                    <p contenteditable="true" class="contador" id="estatura">130</p>
+                </div>
+                <div class="barra">
+                    <input type="range" name="" value="130" step="1" min="130" max="200" class="rango" id="barra_estatura">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion resultado -->
+        <section class="resultado">
+            <label for="" class="salida" id="resultado">...</label>
+            <button type="button" class="boton" id="boton" onclick="Calcular()">CALCULAR</button>
+        </section>
+    </form>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

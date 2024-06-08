@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat';
+    margin: 0px;
+    height: 100vh;
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.titulo{
+    text-align:center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    color: aliceblue;
+}
+.formulario{
+    color: rgb(107, 107, 107);
+    width: min-content;
+    height: min-content;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+}
+.genero {
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline: 50px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.sexo{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 30px;
+    text-align: center;
+}
+.leyendas{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.peso_estatura {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-inline: 50px;
+    margin-bottom: 30px;
+}
+.contador, .parametros{
+    display: inline-flex;
+    margin: 0px;
+    margin-bottom: 12px;
+}
+.contador{
+    float: right;
+    margin-right: 30px;
+    padding-inline: 40px;
+    padding-block: 4px;
+    border-radius: 4px;
+    background-color: rgb(231, 231, 231);
+}
+.parametros{
+    float: left;
+    margin-left: 34px;
+}
+.peso, .estatura{
+    margin-bottom: 20px;
+}
+.aling_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.barra{
+    margin-inline: 30px;
+}
+.rango{
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #6b8dff 0%, #ff2a5f 0%, #d6d6d6 0%, #d6d6d6 100%);
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    border-radius: 25px;
+}
+.rango::-webkit-slider-thumb{
+    cursor: pointer;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: #ff4473;
+    border-radius: 50%;
+    border: 3px solid rgb(187, 187, 187);
+}
+.resultado{
+    display: flex;
+    flex-direction: column;
+}
+.salida{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.boton{
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    appearance: none;
+    border: none;
+    padding-inline: 40px;
+    padding-block: 15px;
+    border-radius: 4px;
+    background-color: rgb(248, 100, 108);
+    font-weight: 800;
+    color: white;
+}
